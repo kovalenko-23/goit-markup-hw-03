@@ -1,0 +1,219 @@
+:root {
+  --primary-text-color: #757575;
+  --primary-title-color: #212121;
+  --alt-logo-color: #2196f3;
+  --bcg-button-color: #f5f4fa;
+  --bcg-color: #f5f4fa;
+  --primary-white-color: #fff;
+  --alt-bcg-color: #2f303a;
+  --address-items-color: rgb(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Navigation*/
+
+.part-web {
+  color: var(--alt-logo-color);
+}
+
+.link-main:focus,
+.link-main:hover {
+  color: #000;
+}
+
+.nav-links .link:hover,
+.nav-links .link:focus,
+.nav-links .link.current,
+.address a:hover,
+.address a:focus {
+  color: #2196f3;
+}
+
+.address a {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-links .link-main {
+  color: #000;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+a,
+.nav-links .link {
+  text-decoration: none;
+}
+
+.nav-links .link {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Main */
+
+/* Hero */
+.section-hero {
+  background-color: var(--alt-bcg-color);
+}
+
+.section-hero .section-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-hero .button-order {
+  background-color: var(--alt-logo-color);
+  color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.section-hero button:hover,
+.section-hero button:focus {
+  background-color: var(--bcg-button-color);
+  color: var(--primary-title-color);
+}
+
+/* Section Advantages */
+.section-advantages .section-item {
+  color: var(--primary-title-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-advantages .section-text {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Activities section */
+.section-activities .section-title {
+  color: var(--primary-title-color);
+  font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+/* Our Team section */
+.section-team {
+  background-color: var(--bcg-color);
+}
+
+.section-team .worker {
+  background-color: var(--primary-white-color);
+}
+
+.section-team .section-title {
+  color: var(--primary-title-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-team .section-item {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.84;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-team .section-text {
+  color: var(--primary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+
+footer {
+  background-color: #2f303a;
+}
+
+.city {
+  color: var(--primary-white-color);
+}
+
+.logo-link {
+  color: var(--primary-white-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.auth-nav .city {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  color: var(--primary-white-color);
+}
+
+.auth-nav .auth {
+  color: var(--address-items-color);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--alt-bcg-color);
+}

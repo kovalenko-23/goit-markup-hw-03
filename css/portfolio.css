@@ -1,0 +1,60 @@
+:root {
+  --primary-text-color: #757575;
+  --primary-title-color: #212121;
+  --alt-logo-color: #2196f3;
+  --bcg-button-color: #f5f4fa;
+  --alt-bcg-color: #f5f4fa;
+  --primary-white-color: #fff;
+  --footer-bcg-color: #2f303a;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Portfolio section */
+.section-portfolio .section-button {
+  color: var(--primary-title-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.projects-list .title {
+  color: var(--primary-title-color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-list .type {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+button {
+  background-color: var(--bcg-button-color);
+  color: var(--primary-title-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+button:hover,
+button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--alt-logo-color);
+}
