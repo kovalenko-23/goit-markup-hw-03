@@ -12,10 +12,70 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Portfolio section */
+.page-header.container {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.nav-links {
+  display: flex;
+  align-items: baseline;
+}
+
+/* Web Studio link */
+.link-main {
+  margin-right: 93px;
+  padding-top: 15px;
+}
+
+/* Navigation */
+.page-header .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.page-header .list {
+  display: flex;
+}
+
+.section-portfolio .list.buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
 .section-portfolio .section-button {
   color: var(--primary-title-color);
-  font-family: Roboto;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -23,9 +83,41 @@ a {
   letter-spacing: 0.03em;
 }
 
+/* Address list */
+.address.list {
+  justify-content: flex-end;
+}
+
+.address > .item:last-child {
+  margin-left: 50px;
+}
+
+.list > .section-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* ===MAIN=== */
+/* ===Cards=== */
+.card-content {
+  padding: 20px 24px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.projects-list > .card {
+  /* text-align: start; */
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .projects-list .title {
   color: var(--primary-title-color);
-  font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -34,21 +126,33 @@ a {
 
 .projects-list .type {
   color: var(--primary-text-color);
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin-top: 4px;
+}
+
+.projects-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  min-width: 73px;
+
   background-color: var(--bcg-button-color);
   color: var(--primary-title-color);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -57,4 +161,18 @@ button:hover,
 button:focus {
   color: var(--primary-white-color);
   background-color: var(--alt-logo-color);
+}
+
+.auth-nav p {
+  padding-bottom: 60px;
+}
+
+.city-address {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.auth.mail {
+  margin-bottom: 9px;
+  display: inline-block;
 }
