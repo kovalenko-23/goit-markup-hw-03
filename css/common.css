@@ -56,13 +56,14 @@ p {
 
 /*===NAVIGATION===*/
 .page-header .list {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  align-items: center;
 }
 
 .page-header.container {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   display: flex;
 }
 
@@ -76,8 +77,9 @@ p {
 
 /* Web Studio link */
 .link-main {
+  display: flex;
+  align-items: center;
   margin-right: 93px;
-  padding-top: 15px;
 }
 
 .part-web {
@@ -260,7 +262,7 @@ a,
 .section-team {
   background-color: var(--bcg-color);
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
 }
 
 .section-team .worker {
@@ -298,9 +300,13 @@ a,
 }
 
 /* Footer */
-
 footer {
   background-color: #2f303a;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .city {
@@ -315,7 +321,6 @@ footer {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -338,10 +343,6 @@ footer {
 footer a:hover,
 footer a:focus {
   color: var(--alt-bcg-color);
-}
-
-.auth-nav p {
-  padding-bottom: 60px;
 }
 
 .city-address {

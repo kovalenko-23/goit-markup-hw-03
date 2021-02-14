@@ -18,6 +18,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+li {
+  display: block;
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -40,8 +44,9 @@ img {
 
 /* Web Studio link */
 .link-main {
+  display: flex;
+  align-items: center;
   margin-right: 93px;
-  padding-top: 15px;
 }
 
 /* Navigation */
@@ -146,10 +151,6 @@ button:hover,
 button:focus {
   color: var(--primary-white-color);
   background-color: var(--alt-logo-color);
-}
-
-.auth-nav p {
-  padding-bottom: 60px;
 }
 
 .city-address {
