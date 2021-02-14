@@ -33,6 +33,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: block;
 }
 
 .container {
@@ -54,8 +55,38 @@ p {
 }
 
 /*===NAVIGATION===*/
+.page-header .list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-header.container {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+}
+
+.page-header .list {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+}
+
+/* Web Studio link */
+.link-main {
+  margin-right: 93px;
+  padding-top: 15px;
+}
+
 .part-web {
   color: var(--alt-logo-color);
+}
+
+/* super cool option */
+.page-header .item + .item {
+  margin-left: 50px;
 }
 
 .link-main:focus,
@@ -99,6 +130,12 @@ a,
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+/* Address list */
+.address.list {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*====MAIN====*/
@@ -152,7 +189,7 @@ a,
   justify-content: space-between;
 }
 
-.list > .item:not(:last-child) {
+.list.advantages > .item:not(:last-child) {
   margin-right: 30px;
 }
 

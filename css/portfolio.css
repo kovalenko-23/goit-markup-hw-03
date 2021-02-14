@@ -34,21 +34,8 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
-}
-
-/* Portfolio section */
-.page-header.container {
-  padding-left: 0;
-  padding-right: 0;
-  display: flex;
-  align-items: baseline;
-}
-
-.nav-links {
-  display: flex;
-  align-items: baseline;
+  /* max-width: 100%; */
 }
 
 /* Web Studio link */
@@ -58,10 +45,6 @@ img {
 }
 
 /* Navigation */
-.page-header .item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .page-header .list {
   display: flex;
 }
@@ -70,7 +53,7 @@ img {
   display: flex;
   justify-content: center;
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .section-portfolio .section-button {
@@ -88,16 +71,18 @@ img {
   justify-content: flex-end;
 }
 
-.address > .item:last-child {
-  margin-left: 50px;
-}
-
+/* Buttons */
 .list > .section-button:not(:last-child) {
   margin-right: 8px;
 }
 
 /* ===MAIN=== */
 /* ===Cards=== */
+
+.section-portfolio:last-child {
+  margin-bottom: 94px;
+}
+
 .card-content {
   padding: 20px 24px;
 }
@@ -105,14 +90,14 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
   margin-top: -30px;
+  justify-content: space-between;
+  padding-bottom: 94px;
+  /* outline: 1px solid tomato; */
 }
 
 .projects-list > .card {
-  /* text-align: start; */
   flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
   margin-top: 30px;
 }
 
