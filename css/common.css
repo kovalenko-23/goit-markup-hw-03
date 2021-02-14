@@ -136,6 +136,7 @@ a,
 .address.list {
   display: flex;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 /*====MAIN====*/
